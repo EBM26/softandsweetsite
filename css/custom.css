@@ -576,6 +576,7 @@ transform: translateY(0);
     #banner2{background-image: url(../images/Office2Mobile.jpg)}
     #banner3{background-image: url(../images/Office3Mobile.jpg)}
     #banner4{background-image: url(../images/Office4Mobile.jpg)}
+    .main-header{background: #FFF !important;}
 }
 
 
