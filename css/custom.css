@@ -570,6 +570,7 @@ transform: translateY(0);
 .avatarGray p{margin: 0 !important;}
 .insta-sldr{display: flex;}
 .marbot50{margin-bottom: 50px !important;}
+.menuContainer{max-width: 800px; padding: 60px; text-align: center;}
 
 @media only screen and ( max-width: 1023px ) {
     .banner-wrapper{padding: 130px 0;}
