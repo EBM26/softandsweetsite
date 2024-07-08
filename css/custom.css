@@ -281,7 +281,7 @@ transform: translateY(0);
 .review-slider {padding-bottom: 120px !important;}
 .review-slider-item { position: relative; }
 .review-slider-item .qutoes { position: absolute; right: 0; top: 0; }
-.review-slider-item h2 { max-width: 410px; margin: 10px 0 70px; }
+.review-slider-item h2 { max-width: 410px; margin: 10px 0 70px; color: #E0B4A3;}
 .review-slider-item p {font-size: clamp(1.25rem, 1.083rem + 0.347vw, 1.5rem);margin: 0 0 40px;}
 
 .review-author { display: flex; align-items: center; }
@@ -321,7 +321,7 @@ transform: translateY(0);
 .insta-sec { background: url(../images/insta-bg-leaf.svg) no-repeat left 25px;}
 .insta-sec h2 { margin: 0 0 15px; } 
 .insta-sec h5 { font-family: var(--Jost); color: var(--brown-shade-three); font-weight: 500; } 
-.insta-sldr .insta-item { padding: 0 15px; } 
+.insta-sldr .insta-item { padding: 0 15px; flex: 1;} 
 .insta-sldr .insta-item .imgbox { position: relative; padding: 0 0 100%; } 
 .insta-sldr .insta-item .imgbox a { display: block; } 
 .insta-sldr .insta-item .imgbox img { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; object-fit: cover; } 
@@ -332,8 +332,8 @@ transform: translateY(0);
 /*.............. Insta Block ..............*/
 
 /*.............. Footer CSS ..............*/
-.footer-main { background: #FDF5F3; } 
-.ftr-top { padding: 60px 0; background: url(../images/footer-bg-leaf.svg) no-repeat right 60px; } 
+.footer-main { background: #FDF5F3; z-index: 3; position: relative;} 
+.ftr-top { padding: 60px 0 0; background: url(../images/footer-bg-leaf.svg) no-repeat right 60px; } 
 .ftr-top .ftr-logo { max-width: 355px; margin: 0 0 25px; } 
 .ftr-info { max-width: 500px; } 
 .ftr-rt { max-width: 640px; }
@@ -362,7 +362,7 @@ transform: translateY(0);
 
     /*.............. Review from clients section ..............*/
 
-    .review-slider-item .qutoes img { max-width: 85%; margin-left: auto; }
+    .review-slider-item .qutoes img { max-width: 65%; margin-left: auto; }
 
     /*.............. Review from clients section ..............*/
 
@@ -388,7 +388,7 @@ transform: translateY(0);
     .work-sec-cnt p { margin: 0 0 20px; }
 
     .review-slider-item .qutoes img { max-width: 60%; }
-    .review-slider-item h2 { margin: 10px 0 20px;max-width: 320px; }
+    .review-slider-item h2 { margin: 10px 0 20px;max-width: 320px;}
     .review-slider-item p { line-height: 1.4; }
 
 }
@@ -496,7 +496,7 @@ transform: translateY(0);
 
     .contact-info-sec .sec-shape-right { width: 36px; z-index: 1; bottom: 40px; }
 
-    .insta-sldr { padding-top: 60px; }
+    .insta-sldr { padding-top: 20px; }
 
     .slick-dots li.slick-active button:before { color: #777a89; opacity: 1; }
     .slick-dots { bottom: -40px; }
@@ -540,7 +540,7 @@ transform: translateY(0);
     .contact-info-sec .img-holder {padding-bottom: 130%;margin-bottom: 40px;height: inherit;}
 
 
-    .insta-sldr .insta-item .imgbox a:before, .insta-sldr .insta-item .imgbox a::after {opacity: 1;}
+    .insta-sldr .insta-item .imgbox a:before, .insta-sldr .insta-item .imgbox a::after {opacity: .5;}
 
     .ftr-social ul li span.text { display: none; }
     .review-from-client-sec .slick-arrow.slick-prev { left: 25%; }
@@ -562,8 +562,16 @@ transform: translateY(0);
 #banner2{background-image: url(../images/Office2.jpg)}
 #banner3{background-image: url(../images/Office3.jpg)}
 #banner4{background-image: url(../images/Office4.jpg)}
+#floating-button-div{opacity: 0; width: 100%; bottom: 0; text-align: center; background: #FDF5F3;
+                    padding: 15px 0; position: fixed; transition: .3s; z-index: 1;}
+.fixed-nav{opacity: 1 !important;}
+.avatarGray{display: flex; justify-content: center; align-items: center; background: #FDF5F3; 
+            width: 70px; height: 70px; border-radius: 50%;}
+.avatarGray p{margin: 0 !important;}
+.insta-sldr{display: flex;}
+.marbot50{margin-bottom: 50px !important;}
 
-@media only screen and ( max-width: 991px ) {
+@media only screen and ( max-width: 1023px ) {
     .banner-wrapper{padding: 130px 0;}
     .slick-arrow.slick-prev{left: 25px;}
     .slick-arrow.slick-next{right: 25px;}
@@ -577,6 +585,8 @@ transform: translateY(0);
     #banner3{background-image: url(../images/Office3Mobile.jpg)}
     #banner4{background-image: url(../images/Office4Mobile.jpg)}
     .main-header{background: #FFF !important;}
+    .insta-sldr{display: block;}
+    .insta-sldr .insta-item{margin: 20px 0;}
 }
 
 

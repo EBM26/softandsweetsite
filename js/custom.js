@@ -90,32 +90,27 @@ jQuery(document).ready(function () {
     autoplaySpeed: 5000
   });
 
-  jQuery('.insta-sldr').slick({
-    infinite: true,
-    dots: false,
-    arrows: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-
-    responsive: [
-      {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 2,
-        }
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-        }
-      }
-    ],
-  });
 
 });
 
-
+// copyright for the year
 document.getElementById("year").innerHTML = new Date().getFullYear();
+
+// sticky nav 
+        var nav    = document.querySelector('#floating-button-div');
+        var topDiv   = document.querySelector('#top-sec');
+        var topOfNav = topDiv.offsetTop;
+        
+
+        function fixNav() {
+
+          if(window.scrollY >= topOfNav) {
+            nav.classList.add('fixed-nav');
+          } else if (window.scrollY <= topOfNav) {
+            nav.classList.remove('fixed-nav');
+          }
+        }
+
+        window.addEventListener('scroll', fixNav);
+
+
