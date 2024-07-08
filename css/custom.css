@@ -571,6 +571,12 @@ transform: translateY(0);
 .insta-sldr{display: flex;}
 .marbot50{margin-bottom: 50px !important;}
 .menuContainer{max-width: 800px; padding: 60px; text-align: center;}
+.accordion-button:not(.collapsed) {color: var(--brown-shade-one); background-color: #FDF5F3 !important;}
+.accordion-button{font-size: 20px; font-weight: bold;}
+.accordion-body{font-size: 18px;}
+.max1100{max-width: 1100px;}
+
+
 
 @media only screen and ( max-width: 1023px ) {
     .banner-wrapper{padding: 130px 0;}
@@ -588,6 +594,8 @@ transform: translateY(0);
     .main-header{background: #FFF !important;}
     .insta-sldr{display: block;}
     .insta-sldr .insta-item{margin: 20px 0;}
+    .accordion-button{font-size: 17px;}
+    .accordion-body{font-size: 16px;}
 }
 
 
