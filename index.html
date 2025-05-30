@@ -69,10 +69,29 @@
       </div>
     </div>
   </nav>
-
+<div id="banner"><a href="https://www.instagram.com/reel/DKPxf0Tp4tp/?igsh=OGRoNmVkOW96MGM2" target="_blank">
+  </a>
+</div>
 </header>
 
 <!--header section-->
+
+<div class="modal" id="myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><b>✨ New Season New Glow ✨</b></h5>
+      </div>
+      <div class="modal-body">
+        <p><b>Prices increase $5 starting June 15. Plus: I’m now using & carrying Scrub Me Good – clean, cruelty-free skincare you’ll love! ❤️✨</b></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="closeMod" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!--content sction-->
 
@@ -644,6 +663,14 @@
 <script src="js/all.min.js"></script>
 <script src="js/slick.js"></script>
 <script src="js/custom.js"></script>
+<script type="text/javascript">
+    $(window).on('load', function() {
+        $('#myModal').modal('show');
+    });
 
+    $("#closeMod").click(function(){
+        $('#myModal').modal('hide');
+    });
+</script>
 </body>
 </html>

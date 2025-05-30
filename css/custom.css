@@ -576,7 +576,9 @@ transform: translateY(0);
 .accordion-body{font-size: 18px;}
 .max1100{max-width: 1100px;}
 .aboutTitle{text-align: center; margin-bottom: 80px;}
-
+#myModal .modal-content{background: #FDF5F3; text-align: center !important;}
+.modal-title{margin: auto;}
+.modal-footer{justify-content: center;}
 
 
 @media only screen and ( max-width: 1023px ) {
